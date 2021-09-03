@@ -25,15 +25,15 @@
 
 - (void)setupUI {
 
-//    UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickGesture:)];
-//    tapGesture.delegate = self;
-//    [self addGestureRecognizer:tapGesture];
-//
-//    testButton * button = [[testButton alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height/2)];
-//    button.backgroundColor = [UIColor blackColor];
-//    [button setTitle:@"TestSubView" forState:UIControlStateNormal];
-//    [button addTarget:self action:@selector(testClick:) forControlEvents:UIControlEventTouchUpInside];
-//    [self addSubview:button];
+    UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickGesture:)];
+    tapGesture.delegate = self;
+    [self addGestureRecognizer:tapGesture];
+
+    testButton * button = [[testButton alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height/2)];
+    button.backgroundColor = [UIColor blackColor];
+    [button setTitle:@"TestSubView" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(testClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview:button];
     
     NSLog(@"TestSubView.gestureRecognizers:::-------------%@",self.gestureRecognizers);
 //    NSLog(@"testButton.gestureRecognizers:::-------------%@",button.gestureRecognizers);
@@ -56,11 +56,12 @@
 }
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
-    return  NO;
+    return  YES;
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event {
     NSLog(@"TestSubView---------touchesBegan");
+    NSLog(@"TestSubView.nextResponder:%@",self.nextResponder);
     [super touchesBegan:touches withEvent:event];
 }
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event {

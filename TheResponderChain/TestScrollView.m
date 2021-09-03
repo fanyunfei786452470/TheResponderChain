@@ -31,6 +31,7 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event {
     NSLog(@"TestScrollView---------touchesBegan");
+    NSLog(@"TestScrollView.nextResponder:%@",self.nextResponder);
     [self.nextResponder touchesBegan:touches withEvent:event];
     [super touchesBegan:touches withEvent:event];
 }

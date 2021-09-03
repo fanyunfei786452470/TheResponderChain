@@ -26,10 +26,10 @@
 //        doubleTapGesture.delegate = self;
 //        [self addGestureRecognizer:doubleTapGesture];
         
-//        UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickGesture:)];
-////        tapGesture.delegate = self;
-//        [self addGestureRecognizer:tapGesture];
-//
+        UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickGesture:)];
+        tapGesture.delegate = self;
+        [self addGestureRecognizer:tapGesture];
+
 //        UILongPressGestureRecognizer *longPressGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressClickGesture:)];
 //        longPressGesture.delegate = self;
 //        [self addGestureRecognizer:longPressGesture];
@@ -86,6 +86,7 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event {
     NSLog(@"TestSuperView---------touchesBegan");
+    NSLog(@"TestSuperView.nextResponder:%@",self.nextResponder);
     [super touchesBegan:touches withEvent:event];
 }
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event {
