@@ -21,7 +21,7 @@
 		0F847B1526C64C700078D984 /* TestSuperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F847B0F26C64C700078D984 /* TestSuperView.m */; };
 		0F847B1626C64C700078D984 /* TestSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F847B1026C64C700078D984 /* TestSubView.m */; };
 		0F847B1726C64C700078D984 /* testButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F847B1226C64C700078D984 /* testButton.m */; };
-		0F847B1826C64C700078D984 /* TestCoordinateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F847B1326C64C700078D984 /* TestCoordinateView.m */; };
+		0FC784B72B5CF10A001172A8 /* TestTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC784B62B5CF10A001172A8 /* TestTapGestureRecognizer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,15 +63,15 @@
 		0F847B0826C64BF40078D984 /* TestResponderChainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestResponderChainViewController.m; sourceTree = "<group>"; };
 		0F847B0A26C64C700078D984 /* TestScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestScrollView.h; sourceTree = "<group>"; };
 		0F847B0B26C64C700078D984 /* TestScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestScrollView.m; sourceTree = "<group>"; };
-		0F847B0C26C64C700078D984 /* TestCoordinateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCoordinateView.h; sourceTree = "<group>"; };
 		0F847B0D26C64C700078D984 /* TestSuperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSuperView.h; sourceTree = "<group>"; };
 		0F847B0E26C64C700078D984 /* testButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testButton.h; sourceTree = "<group>"; };
 		0F847B0F26C64C700078D984 /* TestSuperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSuperView.m; sourceTree = "<group>"; };
 		0F847B1026C64C700078D984 /* TestSubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSubView.m; sourceTree = "<group>"; };
 		0F847B1126C64C700078D984 /* TestSubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSubView.h; sourceTree = "<group>"; };
 		0F847B1226C64C700078D984 /* testButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testButton.m; sourceTree = "<group>"; };
-		0F847B1326C64C700078D984 /* TestCoordinateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCoordinateView.m; sourceTree = "<group>"; };
 		0F847B1926C64CD90078D984 /* TestResponderChainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestResponderChainViewController.h; sourceTree = "<group>"; };
+		0FC784B52B5CF10A001172A8 /* TestTapGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTapGestureRecognizer.h; sourceTree = "<group>"; };
+		0FC784B62B5CF10A001172A8 /* TestTapGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTapGestureRecognizer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,14 +126,14 @@
 				0F847AD326C64B760078D984 /* AppDelegate.m */,
 				0F847AD826C64B760078D984 /* ViewController.h */,
 				0F847AD926C64B760078D984 /* ViewController.m */,
+				0FC784B52B5CF10A001172A8 /* TestTapGestureRecognizer.h */,
+				0FC784B62B5CF10A001172A8 /* TestTapGestureRecognizer.m */,
 				0F24032626C8BC6700773BF7 /* TestWindow.h */,
 				0F24032726C8BC6700773BF7 /* TestWindow.m */,
 				0F847B1926C64CD90078D984 /* TestResponderChainViewController.h */,
 				0F847B0826C64BF40078D984 /* TestResponderChainViewController.m */,
 				0F847B0E26C64C700078D984 /* testButton.h */,
 				0F847B1226C64C700078D984 /* testButton.m */,
-				0F847B0C26C64C700078D984 /* TestCoordinateView.h */,
-				0F847B1326C64C700078D984 /* TestCoordinateView.m */,
 				0F847B0A26C64C700078D984 /* TestScrollView.h */,
 				0F847B0B26C64C700078D984 /* TestScrollView.m */,
 				0F847B1126C64C700078D984 /* TestSubView.h */,
@@ -233,6 +233,7 @@
 				TargetAttributes = {
 					0F847ACE26C64B760078D984 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1520;
 					};
 					0F847AE926C64B790078D984 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -296,12 +297,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FC784B72B5CF10A001172A8 /* TestTapGestureRecognizer.m in Sources */,
 				0F847B0926C64BF40078D984 /* TestResponderChainViewController.m in Sources */,
 				0F24032826C8BC6700773BF7 /* TestWindow.m in Sources */,
 				0F847B1426C64C700078D984 /* TestScrollView.m in Sources */,
 				0F847ADA26C64B760078D984 /* ViewController.m in Sources */,
 				0F847AD426C64B760078D984 /* AppDelegate.m in Sources */,
-				0F847B1826C64C700078D984 /* TestCoordinateView.m in Sources */,
 				0F847AE526C64B780078D984 /* main.m in Sources */,
 				0F847B1626C64C700078D984 /* TestSubView.m in Sources */,
 				0F847B1526C64C700078D984 /* TestSuperView.m in Sources */,
@@ -477,6 +478,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4H33EPS92X;
 				INFOPLIST_FILE = TheResponderChain/Info.plist;
@@ -486,6 +488,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.fanyunfei.TheResponderChain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -495,6 +499,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4H33EPS92X;
 				INFOPLIST_FILE = TheResponderChain/Info.plist;
@@ -504,6 +509,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.fanyunfei.TheResponderChain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

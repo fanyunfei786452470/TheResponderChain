@@ -17,9 +17,9 @@
     self = [super initWithFrame:frame];
     if (self) {
 
-//        UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickGesture:)];
-//        tapGesture.delegate = self;
-//        [self addGestureRecognizer:tapGesture];
+        UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickGesture:)];
+        tapGesture.delegate = self;
+        [self addGestureRecognizer:tapGesture];
 
     }
     return self;
@@ -29,10 +29,13 @@
     NSLog(@"testButton click Gesture");
 }
 
-//- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
-//    return YES;
-//}
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+    return YES;
+}
 
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+    return  YES;
+}
 //- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
 //    return NO;
 //}

@@ -9,6 +9,7 @@
 #import "TestSubView.h"
 
 #import "testButton.h"
+#import "TestTapGestureRecognizer.h"
 @interface TestSubView () <UIGestureRecognizerDelegate>
 
 @end
@@ -25,7 +26,7 @@
 
 - (void)setupUI {
 
-    UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickGesture:)];
+    TestTapGestureRecognizer* tapGesture = [[TestTapGestureRecognizer alloc] initWithTarget:self action:@selector(clickGesture:)];
     tapGesture.delegate = self;
     [self addGestureRecognizer:tapGesture];
 
@@ -47,9 +48,9 @@
     NSLog(@"TestSubView click Gesture");
 }
 
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
-    return NO;
-}
+//- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+//    return NO;
+//}
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
     return YES;

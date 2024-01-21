@@ -9,7 +9,7 @@
 #import "TestSuperView.h"
 
 @interface TestSuperView ()
-//<UIGestureRecognizerDelegate>
+<UIGestureRecognizerDelegate>
 
 
 @end

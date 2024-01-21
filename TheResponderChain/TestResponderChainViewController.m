@@ -27,10 +27,10 @@
 //    TestCoordinateView * coordinateView = [[TestCoordinateView alloc] initWithFrame:CGRectMake(20, 100, 300, 200)];
 //    [self.view addSubview:coordinateView];
     
-//    TestScrollView * scrollview = [[TestScrollView alloc] initWithFrame:self.view.bounds];
-//    scrollview.userInteractionEnabled = YES;
-//    scrollview.backgroundColor = [UIColor yellowColor];
-//    [self.view addSubview:scrollview];
+    TestScrollView * scrollview = [[TestScrollView alloc] initWithFrame:self.view.bounds];
+    scrollview.userInteractionEnabled = YES;
+    scrollview.backgroundColor = [UIColor yellowColor];
+    [self.view addSubview:scrollview];
 
     TestSuperView * superView  = [[TestSuperView alloc] initWithFrame:CGRectMake(0, 0, 300, 500)];
     superView.backgroundColor = [UIColor redColor];

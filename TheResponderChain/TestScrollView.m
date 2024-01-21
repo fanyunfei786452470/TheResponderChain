@@ -24,6 +24,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
+        self.userInteractionEnabled = YES;
         NSLog(@"TestScrollView.gestureRecognizers:::-------------%@",self.gestureRecognizers);
     }
     return self;
